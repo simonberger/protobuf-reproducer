@@ -12,12 +12,14 @@ The bug is reproducible on at least a wide range of Linux and Mac systems.
 1. `php composer.phar install`
 2. `vendor/bin/codecept run`
 3. alternative `vendor/bin/phpunit phpunit_tests`
+4. simplest alternative `php public/protobuf_init.php`
 
 ## Usage with docker
 
 1. `docker compose up`
 2. `docker compose run --rm cli vendor/bin/codecept run`
 3. alternative `docker compose run --rm cli vendor/bin/phpunit phpunit_tests` (in local it did show the corruption error this did not)
+4. simplest alternative `docker compose run --rm cli php public/protobuf_init.php`
 
 ## Expected (error) output
 
