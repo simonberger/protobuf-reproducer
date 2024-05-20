@@ -1,0 +1,7 @@
+services:
+  cli:
+    build:
+      context: .
+    command: "php ./composer.phar install"
+    volumes:
+      - .:/var/www/project
